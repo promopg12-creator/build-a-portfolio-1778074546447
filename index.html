@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Site</title>
+  <style>
+    :root {
+      --primary-color: #3B5998; /* Facebook blue */
+      --accent-color: #2196F3; /* Google blue */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+    }
+
+    .hero {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero button {
+      background-color: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .project {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
+
+    .project h2 {
+      font-size: 1.5rem;
+    }
+
+    .project p {
+      font-size: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Portfolio Site</h1>
+    <button>Learn More</button>
+  </header>
+  <main>
+    <section class="projects">
+      <div class="project">
+        <h2>Project 1</h2>
+        <p>Description of Project 1</p>
+      </div>
+      <div class="project">
+        <h2>Project 2</h2>
+        <p>Description of Project 2</p>
+      </div>
+      <div class="project">
+        <h2>Project 3</h2>
+        <p>Description of Project 3</p>
+      </div>
+    </section>
+    <section class="contact">
+      <a href="mailto:example@example.com">example@example.com</a>
+      <a href="https://LinkedIn.com/in/your-LinkedIn-profile">LinkedIn Profile</a>
+      <a href="https://GitHub.com/your-GitHub-profile">GitHub Profile</a>
+    </section>
+  </main>
+  <script>
+    const heroButton = document.querySelector('.hero button');
+
+    heroButton.addEventListener('click', () => {
+      console.log('Learn More button clicked');
+    });
+  </script>
+</body>
+</html>
